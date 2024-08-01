@@ -1,0 +1,49 @@
+# Title: Status Dashboard API Rework
+
+Status: Proposed
+
+Context:
+
+The current status dashboard API is experiencing performance and scalability issues, primarily due to:
+
+- Scaling challenges: The API struggles to handle increasing traffic, resulting in slow response times and timeouts.
+- Session management inefficiencies: Current session management mechanisms are not optimized, leading to performance bottlenecks and potential security risks.
+- Database query inefficiencies: The underlying database schema is not optimized for the API's data access patterns, resulting in slow query execution.
+
+These issues negatively impact the overall user experience of the status dashboard.
+
+Considered Options:
+
+- Option A: Optimize the current Flask application.
+  - Pros: Lower development effort, potential for performance gains through optimization.
+  - Cons: Limited scalability potential, might not fully address underlying issues.
+
+- Option B: Complete rework using Golang and Gin framework.
+  - Pros: High performance potential, strong concurrency support, large community, interesting task
+  - Cons: Significant development effort, steep learning curve for team members.
+
+- Option C: Rework using Python and FastAPI framework.
+  - Pros: Leveraging existing Python skills, high performance, modern framework.
+  - Cons: Potential performance limitations compared to Golang, might not fully address scaling challenges.
+
+Decision Criteria:
+
+- Performance benchmarks (response time, throughput)
+- Scalability (ability to handle increased load)
+- Development effort and time
+- Team expertise and preferences
+- Long-term maintainability
+
+Consequences:
+
+The chosen option will impact:
+
+- API performance and responsiveness
+- System scalability
+- Development costs and timelines
+- Team morale and productivity
+
+Next Steps:
+
+- Conduct performance benchmarks for the current Flask application.
+- Evaluate the team's proficiency in Golang and FastAPI.

@@ -1,0 +1,43 @@
+# Title: Status Dashboard Next Rework
+
+Status: Proposed
+
+Context:
+
+The current status dashboard suffers from several issues:
+
+- Frontend needs to be redisigned to use new Telekom UI framework
+- Backend API performance and scalability concerns
+- Database model should be redisigned to avoid inefficient database queries
+
+Considered options:
+
+- Use frontend build on C#, but that language exceeds team skill scope
+- Rework frontend using JS framework React or Vue.js
+
+Decision:
+
+To address these issues, we will rework the frontend using either React or Vue.js, as these frameworks align with our team's skillset. The backend and database will also be addressed in subsequent ADRs.
+
+Consequences:
+
+- Positive:
+  - Improved user experience through a modern UI
+  - Potential performance gains from backend and database optimizations
+  - Increased maintainability of the codebase
+
+- Negative:
+  - Increased development time and effort
+  - Potential risks associated with adopting a new framework
+  - Temporary disruption to ongoing development
+
+Metrics:
+
+- User satisfaction surveys
+- Performance benchmarks before and after the rework
+- Development team feedback on the new framework
+
+Next Steps:
+
+- Create ADRs for backend and database improvements
+- Develop a detailed project plan for the frontend rework
